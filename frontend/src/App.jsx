@@ -124,7 +124,7 @@ async function issueCertificate() {
 
         <input
           className="w-full border rounded-lg p-2 mb-4"
-          placeholder="Metadata URI (Firebase / IPFS)"
+          placeholder="Metadata URI"
           value={metadataURI}
           onChange={(e) => setMetadataURI(e.target.value)}
         />

@@ -81,18 +81,18 @@ async function issueCertificate() {
   <div className="min-h-screen bg-teal-900 font-mono">
     
     {/* Header */}
-    <header className="bg-slate-900 text-white text-center py-8">
+    <header className="bg-linear-to-r from-teal-500 to-lime-200 bg-slate-900 text-white text-center py-8">
       <h1 className="text-3xl font-bold">
         Skill-Backed Campus Certificates
       </h1>
-      <p className="mt-2 text-slate-300">
+      <p className="mt-2 text-lime-800">
         Instant • Verifiable • Student-Owned
       </p>
 
       {!account ? (
         <button
           onClick={connectWallet}
-          className="mt-6 px-6 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+          className="mt-6 px-6 py-2 bg-lime-800 rounded-lg hover:bg-lime-100  hover:text-black transition"
         >
           Connect Wallet
         </button>
@@ -108,7 +108,7 @@ async function issueCertificate() {
 
       {/* Issue Certificate */}
       <section className="bg-white rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-semibold mb-1">
+        <h2 className="text-xl font-semibold mb-1 text-lime-800">
           Issue Certificate
         </h2>
         <p className="text-sm text-slate-500 mb-4">
@@ -131,7 +131,7 @@ async function issueCertificate() {
 
         <button
           onClick={issueCertificate}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          className="w-full bg-teal-900 text-white py-2 rounded-lg  hover:bg-emerald-600"
         >
           Issue Certificate
         </button>
@@ -139,7 +139,7 @@ async function issueCertificate() {
 
       {/* Verify Certificate */}
       <section className="bg-white rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-semibold mb-1">
+        <h2 className="text-xl font-semibold mb-1  text-lime-800">
           Verify Certificate
         </h2>
         <p className="text-sm text-slate-500 mb-4">
@@ -155,14 +155,14 @@ async function issueCertificate() {
 
         <button
           onClick={verifyCertificate}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          className="w-full bg-teal-900 text-white py-2 rounded-lg hover:bg-emerald-600"
         >
           Verify
         </button>
 
         {verified && (
           <div className="mt-4 bg-slate-100 rounded-lg p-4">
-            <h3 className="font-semibold text-green-700">
+            <h3 className="font-semibold text-lime-800">
               Certificate Verified
             </h3>
 
@@ -190,6 +190,7 @@ async function issueCertificate() {
     </main>
 
     {/* Footer */}
+
     <footer className="text-center text-sm text-slate-300 py-6">
       Built for HackSync | GDG On Campus | Powered by Google & Web3
     </footer>

@@ -106,7 +106,7 @@ Ethereum Sepolia Testnet
 
 **Problem Statement:** Open Innovation  
 
-- **Inarat Hussain** — Team Leader  
+- **Inarat Hussain** 
 - **Devrikh Jatav**
 
 ---

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
 // ====== CONFIG ======
-const CONTRACT_ADDRESS = "0x0xD16361a22CC9Fa852dbd12a46db7238e0994E549";
+const CONTRACT_ADDRESS = "0xD16361a22CC9Fa852dbd12a46db7238e0994E549";
 const CONTRACT_ABI = [
   "function issueCertificate(address to, string memory tokenURI) public",
   "function tokenURI(uint256 tokenId) view returns (string)",
@@ -43,7 +43,12 @@ export default function App() {
   }
 
   // ====== ISSUE CERTIFICATE ======
-  async function issueCertificate() {
+async function issueCertificate() {
+  if (!contract) {
+    alert("Please connect your wallet first!");
+    return;
+  }
+
   try {
     const tx = await contract.issueCertificate(studentAddress, metadataURI);
     await tx.wait();
@@ -53,6 +58,7 @@ export default function App() {
     alert("Issuance failed");
   }
 }
+
 
 
   // ====== VERIFY CERTIFICATE ======

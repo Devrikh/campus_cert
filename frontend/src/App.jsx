@@ -16,6 +16,7 @@ export default function App() {
 
   const [studentAddress, setStudentAddress] = useState("");
   //const [tokenURI, setTokenURI] = useState("");
+  const [metadataURI, setMetadataURI] = useState("");
   const [verifyId, setVerifyId] = useState("");
   const [verified, setVerified] = useState(null);
 
@@ -70,7 +71,7 @@ export default function App() {
 
 
   return (
-  <div className="min-h-screen bg-slate-50 font-sans">
+  <div className="min-h-screen bg-slate-300 font-sans">
     
     {/* Header */}
     <header className="bg-slate-900 text-white text-center py-8">
@@ -84,7 +85,7 @@ export default function App() {
       {!account ? (
         <button
           onClick={connectWallet}
-          className="mt-6 px-6 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+          className="mt-6 px-6 py-2 bg-blue-500 rounded-lg hover:bg-blue-700 transition"
         >
           Connect Wallet
         </button>
@@ -123,7 +124,7 @@ export default function App() {
 
         <button
           onClick={issueCertificate}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700"
         >
           Issue Certificate
         </button>
@@ -147,7 +148,7 @@ export default function App() {
 
         <button
           onClick={verifyCertificate}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700"
         >
           Verify
         </button>

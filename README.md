@@ -127,4 +127,4 @@ CampusCert demonstrates how **Web3 can solve real-world trust problems** in educ
 
 ---
 
-**Built for GDGC TechSprint 🚀**
+**Built for HackSync2.0 🚀**

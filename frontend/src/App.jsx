@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
 // ====== CONFIG ======
-const CONTRACT_ADDRESS = "0xYOUR_CONTRACT_ADDRESS";
+const CONTRACT_ADDRESS = "0x0xD16361a22CC9Fa852dbd12a46db7238e0994E549";
 const CONTRACT_ABI = [
   "function issueCertificate(address to, string memory tokenURI) public",
   "function tokenURI(uint256 tokenId) view returns (string)",
@@ -13,6 +13,8 @@ export default function App() {
   const [account, setAccount] = useState(null);
   const [provider, setProvider] = useState(null);
   const [contract, setContract] = useState(null);
+  const [metadataURI, setMetadataURI] = useState("");
+
 
   const [studentAddress, setStudentAddress] = useState("");
   //const [tokenURI, setTokenURI] = useState("");

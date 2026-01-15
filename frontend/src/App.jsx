@@ -18,7 +18,7 @@ export default function App() {
 
   const [studentAddress, setStudentAddress] = useState("");
   //const [tokenURI, setTokenURI] = useState("");
-  const [metadataURI, setMetadataURI] = useState("");
+  //const [metadataURI, setMetadataURI] = useState("");
   const [verifyId, setVerifyId] = useState("");
   const [verified, setVerified] = useState(null);
 
@@ -80,7 +80,7 @@ export default function App() {
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
         Skill-Backed Campus Certificates
       </h1>
-      <p className="mt-3 text-lime-100">
+      <p className="mt-3 text-lime-900">
         Instant • Verifiable • Student-Owned
       </p>
 
@@ -102,7 +102,7 @@ export default function App() {
     <main className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
 
       {/* Issue Certificate */}
-      <section className="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-lime-600">
+      <section className="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-emerald-500">
         <h2 className="text-xl font-semibold text-lime-700 mb-1">
           Issue Certificate
         </h2>
@@ -133,7 +133,7 @@ export default function App() {
       </section>
 
       {/* Verify Certificate */}
-      <section className="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-lime-600">
+      <section className="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-emerald-500">
         <h2 className="text-xl font-semibold text-lime-700 mb-1">
           Verify Certificate
         </h2>
@@ -185,7 +185,7 @@ export default function App() {
     </main>
 
     {/* Footer */}
-    <footer className="text-center text-sm text-slate-500 py-6">
+    <footer className="text-center text-sm text-slate-300 py-6">
       Built for HackSync • GDG On Campus • Powered by Google & Blockchain
     </footer>
   </div>

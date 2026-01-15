@@ -73,7 +73,7 @@ export default function App() {
 
 
   return (
-  <div className="min-h-screen bg-teal-900 font-sans">
+  <div className="min-h-screen bg-teal-900 font-mono">
     
     {/* Header */}
     <header className="bg-linear-to-r from-emerald-500 to-lime-200 text-white text-center py-10 shadow-md">
@@ -186,7 +186,7 @@ export default function App() {
 
     {/* Footer */}
     <footer className="text-center text-sm text-slate-300 py-6">
-      Built for HackSync • GDG On Campus • Powered by Google & Blockchain
+      Built for HackSync | GDG On Campus | Powered by Google & Web3
     </footer>
   </div>
 );
